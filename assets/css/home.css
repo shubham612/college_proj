@@ -1,0 +1,373 @@
+body{
+    margin: 0px;
+ }
+ 
+ header{
+     height: 8vh;
+     width: 100%;
+     /*background-image: linear-gradient(to top right,#2857a4,#403066);*/
+     background-color: #007CAA;
+     position: relative;
+ }
+ 
+ nav{
+   position: absolute;
+   display: inline-block;
+   top: 2vh;
+   left: 3vh;
+ }
+ 
+ .text-center{
+    text-align: initial;
+ }
+ 
+ .horizontal-list{
+     list-style: none;
+     padding-left: 0px;
+ 
+ }
+ 
+ .horizontal-list li{
+     display: inline;
+     margin: 0px 18px 18px 0px;
+ }
+ 
+ .horizontal-list li a{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     /*text-transform: uppercase;*/
+     
+ }
+ 
+ .nav-menu li a{
+    
+    transition: color 1s,border-bottom 4s;
+ }
+ 
+ .nav-menu li a:hover{
+     color: black;
+     border-bottom: 1px solid white;
+ }
+ 
+ .button{
+     width: 150px;
+     height: 5vh;
+     line-height: 3.5vh;
+     text-align: center;
+     font-size: 18px;
+     /*outline: none;*/
+     user-select: none;
+     border-radius: 10px;
+     /*border: none;*/
+     text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+     box-shadow: 0 5px 10px #43265EAA;
+     background-image: linear-gradient(to bottom,#e6e4d6 50%,#e8e2e73b);
+     float: right;
+     z-index: 1000;
+     margin: 1vh;
+ }
+ 
+ .button:focus {
+     border: none;
+     outline: none;
+ }
+ 
+ #home-main{
+     width: 100%;
+     height: 90vh;
+     /*background-image: url(cover2.jpg);*/
+     /*opacity: 0.5;*/
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+     
+ }
+ 
+ #home-main:before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: url(../images/cover2.jpg) center center;
+     opacity: .7;
+ }
+ 
+ 
+ .functional-panel{
+     width: 45%;
+     height: 92vh;
+     float: left;
+     padding: 1% 0;
+     margin: 20px 0;
+     background-color: #fff;
+     box-shadow: 8px 8px 3px rgba(85, 85, 85, 0.78);
+     position: relative;
+     bottom: auto;
+     max-width: 974px;
+     min-width: 269px;
+     position: absolute;
+     border: none;
+     /*top: 4vh;*/
+     left: 28%;
+     display: inline-block;
+ }
+ 
+ 
+ .functional-panel> img {
+     width: 45%;
+     height: 10vh;
+     display: block;
+     margin: auto;
+     /*max-width: 225px;*/
+ }
+ 
+ .functional-panel>h1{
+     font-family: Arial;
+     font-size: 15px;
+     font-weight: bold;
+     color: #003d71;
+     text-align: center;
+     font-style: italic;
+     letter-spacing: 0.8px;
+     margin-top: -4px;
+ }
+ 
+ .start_here{
+     display: inline-block;
+     position: absolute;
+     left: 68%;
+     top: 2vh;
+     height: 100px;
+     width: 220px;
+     padding: 0;
+     animation: slide-lr 0.8s ease-in-out 5;
+ }
+ 
+ /********************** Form-styling *************************/
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   background-color: #f1f1f1;
+ }
+ 
+ #regForm {
+   background-color: #ffffff;
+   /*margin: 100px auto;*/
+   font-family: Raleway;
+   margin-left: 30px;
+   margin-top: -25px;
+   padding: 10px;
+   width: 90%;
+   min-width: 300px;
+ 
+ }
+ 
+ h1 {
+   text-align: center;  
+ }
+ 
+ input {
+   padding: 10px;
+   width: 100%;
+   font-size: 17px;
+   font-family: cursive;
+   border: 1px solid #aaaaaa;
+ 
+ }
+ 
+ select {
+   padding: 10px;
+   width: 100%;
+   font-size: 17px;
+   font-family: cursive;
+   border: 1px solid #aaaaaa;
+ }
+ 
+ /* Mark input boxes that gets an error on validation: */
+ input.invalid {
+   background-color: #ffdddd;
+ }
+ 
+ /* Hide all steps by default: */
+ .tab {
+   display: none;
+ }
+ 
+ .form-button {
+   background-color: #007CAA;
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 17px;
+   font-family: Raleway;
+   cursor: pointer;
+ }
+ 
+ .form-button:hover {
+   opacity: 0.8;
+ }
+ 
+ #prevBtn {
+   background-color: #bbbbbb;
+ }
+ 
+ /* Make circles that indicate the steps of the form: */
+ .step {
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbbbbb;
+   border: none;  
+   border-radius: 50%;
+   display: inline-block;
+   opacity: 0.5;
+ }
+ 
+ .step.active {
+   opacity: 1;
+ }
+ 
+ #funDiv4 {
+     width: 100%;
+     height:auto;
+     /*border: 1px solid black;*/
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ 
+ }
+ 
+ #funDiv4 input{
+     border-radius: 4px;
+     width: 40%;
+     height: 35px;
+     margin: 5%;
+     margin-bottom: 0%;
+     border: 1px solid lightgrey;
+     box-shadow: none;
+     font-family: 'proxima-nova', sans-serif;
+     font-size: 13px;
+     color: #333;
+     padding-left: 10px;
+ }
+ 
+ #funDiv4 select{
+     border-radius: 4px;
+     width: 40%;
+     height: 35px;
+     margin: 5%;
+     margin-bottom: 0%;
+     border: 1px solid lightgrey;
+     box-shadow: none;
+     font-family: 'proxima-nova', sans-serif;
+     font-size: 13px;
+     color: #333;
+     overflow-y: hidden;
+ }
+ 
+ 
+ /* Mark the steps that are finished and valid: */
+ .step.finish {
+   background-color: #007CAA;
+ }
+ 
+ /***************** start here animation *********************/
+ 
+ .start_here img{
+     height: 100%;
+     width: 100%;
+ }
+ 
+ @keyframes slide-lr{
+     from{
+         left: 68%;
+     }
+ 
+     to{
+         left: 73%;
+     }
+ }
+ 
+ /*************************************************************/
+ 
+ /************ how it works style ****************************/
+ 
+ .section-heading{
+     width:auto;
+     padding: 20px 10px 20px;
+     /*margin: 10px auto;*/
+     font-weight: 400;
+ }
+ 
+ .text-center{
+    text-align: center;
+ }
+ 
+ .section-heading span{
+     font-size: 50px;
+     color:#2857a4;
+     display:inline-block;
+     padding-top: 35px;
+     margin-right: 0.5rem;
+     font-family: cursive;
+ }
+ 
+ 
+ 
+ .section-container{
+     width: 100%;
+     height: auto;
+     padding-left: 55px;
+     /*border: 1px solid black;*/
+ }
+ 
+ .process-content{
+     height: 350px;
+     width: 350px;
+     margin: 25px;
+     margin-top: 25px;
+     /*border: 1px solid black;*/
+     display: inline-block;
+     text-align: center;
+     box-sizing: border-box;
+     position: relative;
+ }
+ 
+ .img-container{
+     width: 125px;
+     height: 125px;
+     margin-top: 20px;
+     border: 4px solid black;
+     border-radius: 50%;
+     position: absolute;
+     left: 32%;
+ }
+ 
+ .img-container img{
+     width: 110px;
+     height: 110px;
+     margin: 0;
+     border-radius: 50%;
+ }
+ 
+ .process-content span{
+     position: absolute;
+     top: 150px;
+     left: 5%;
+ }
+ 
+ .process-content span p{
+     color: grey;
+     font-family: cursive;
+ }
+ 
+ 
+ 

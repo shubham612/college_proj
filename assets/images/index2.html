@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Required Meta-tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+<!-- HEADER-SECTION ------->
+  <header>
+      <nav>
+
+      <ul class="horizontal-list text-center nav-menu">
+      <li><a href="#"> Home</a></li>
+      <li><a href="#howItWorks">How it Works</a></li>
+      <li><a href="#">What we Offer</a></li>
+      <li><a href="#">Why Us</a></li>
+      <li><a href="#">Trust-factor</a></li>
+      <li><a href="#">Our Charges</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+      </nav> 
+      <button class="button">Login</button> 
+      <button class="button">Refer Maid</button>
+  </header>
+
+  <main>
+    
+      <section id="home-main">
+      <div class="functional-panel">
+        <img src="logo.png" alt="Website-Logo">
+        <h1>Hire your maid online,here!!</h1>
+<!---------------- form --------------------------------->
+
+  <form id="regForm" action="">
+  <!-- <h1>Register:</h1> -->
+   <h1 class="section-heading mb75px text-center" style="font-size: 20px; padding-top: 0;">
+        <!-- <span><i class="fas fa-certificate"></i></span> -->
+        <span>Register Here!</span>
+     </h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab"><h3 style="font-size: 20px; font-family: cursive; color: green;">Personal Details:</h3>
+     <p><input type="text" name="name" placeholder="Enter Your Name" required></p>
+     <p><input type="number" name="phoneNo" placeholder="Enter Your Number" required></p>
+     <p><input type="email" name="email" placeholder="Enter Your Email" required></p>
+            <!-- <button type="submit" class="button_auto " id="reg_submit">Continue</button>   -->
+  </div>
+  <div class="tab"><h3 style="font-size: 20px; font-family: cursive; color: green;">Required Worker's Details:</h3>
+    <p><select name="your locality" id="locality">
+              <option id="opt-0">-Select Worker Gender-</option>
+              <option id="opt-1">Male</option>
+              <option id="opt-2">Female</option>
+              <option id="opt-3">Any</option>
+              <!-- <option id="opt-3">Driver</option> -->
+            </select></p>
+            <h6 style="color: red; font-family: cursive;"> Category of Worker: </h6>
+      <p> <select name="select_box"  multiple>
+        <option>Cooking</option>
+        <option>Cleaning</option>
+        <option>Baby-Sitter</option>
+        <option>Driver</option>
+     </select></p>
+  </div>
+  <div class="tab"><h3 style="font-size: 20px; font-family: cursive; color: green;">Address Details:</h3>
+            <p><select name="your locality" id="locality">
+              <option id="opt-0">-Select-Locality-</option>
+              <option id="opt-1">Locality-1</option>
+              <option id="opt-2">Locality-2</option>
+              <option id="opt-3">Locality-3</option>
+            </select></p>
+     <p><input type="text" name="street_No" placeholder="Enter Your Street No" required></p>
+     <p><input type="text" name="house_No" placeholder="Enter Your Housee No" required></p>
+  </div>
+  <div class="tab"><h3 style="font-size: 20px; font-family: cursive; color: green;">Password:</h3>
+    <p><input type="text" name="password" placeholder="Enter Your Password" required ></p>
+    <p><input type="text" name="re-password" placeholder="Re-type Your Password" required></p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)" class='form-button'>Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)" class="form-button">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+
+
+
+<!----------------------------------------------------------> 
+     </div>    
+    <!-- Start-here Animation --------->
+      <div class="start_here">
+        <img src="start_here2.png"> 
+      </div>
+    <!--------  ********* ----------->  
+   </section>
+
+
+<!---------- How it Works -------------------------------------->
+
+<section class="section-container" id="howItWorks">
+     <h1 class="section-heading mb75px text-center">
+        <span><i class="fas fa-certificate"></i></span>
+        <span>How it Works?</span>
+     </h1>
+
+     <div class="process-content">
+      <div class="img-container" style="padding-top: 7px; box-sizing: border-box;"><img src="search_maid3.png"></div>
+      <span>
+        <h3 style="color:#007CAA; font-family: cursive;">Search</h3>
+        <p>
+          Use our simple search and tell us what you requirements. See list of all the available helpers in your locality.
+        </p>
+
+
+
+      </span>
+        
+      </div>
+       
+     </div>
+     <div class="process-content">
+      <div class="img-container"><img src="select_maid.png"></div>
+      <span><h3 style="color:#007CAA; font-family: cursive;">Shortlist</h3>
+        <p>
+          View the complete profile of the all of the available helpers and shortlist as per your preference.
+        </p>
+
+      </span>
+
+        
+      </div>
+       
+     </div>
+     <div class="process-content">
+      <div class="img-container"><img src="meet_hire.png"></div>
+      <span ><h3 style="color:#007CAA; font-family: cursive;">Meet & Hire</h3>
+        <p>
+          Talk to the helpers on the phone or meet them personally. Select the helpers and pay only after the helpers joins
+        </p>
+
+      </span>
+        
+      </div>
+       
+     </div>
+  
+ </section>
+    
+</main>
+
+
+ <footer>
+
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script2.js"></script>
+</body>
+</html>
